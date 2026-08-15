@@ -7,7 +7,7 @@
   "targets": {
     ".NETCoreApp,Version=v8.0": {},
     ".NETCoreApp,Version=v8.0/win-x64": {
-      "VamBegin/0.4.0": {
+      "VamBegin/0.5.0": {
         "dependencies": {
           "HandyControl": "3.6.0-rc3",
           "LottieSharp": "2.4.3",
@@ -159,7 +159,7 @@
     }
   },
   "libraries": {
-    "VamBegin/0.4.0": {
+    "VamBegin/0.5.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

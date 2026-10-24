@@ -20,44 +20,7 @@
 
 **VAM-BEGIN** 面向 Virt-A-Mate 玩家：把散落在游戏目录里的 `.var` 资源集中到本地库统一管理，按需「仅同步 / 启动游戏」；预设依赖自动补齐、启动预设一键切换，让游戏目录始终只保留当前要用的资源。程序为绿色版，解压即用，配置与资源库存放在任意你指定的目录。
 
----
-
-## 🖼 界面预览
-
-> 以下为应用内实际界面截图，点击图片可查看大图。
-
-<table align="center">
-  <tr>
-    <td align="center" width="50%">
-      <a href="images/screenshot-home.png"><img src="images/screenshot-home.png" width="100%" alt="首页 · 一键启动"/></a><br/>
-      <sub>首页 · 一键启动</sub>
-    </td>
-    <td align="center" width="50%">
-      <a href="images/screenshot-library.png"><img src="images/screenshot-library.png" width="100%" alt="资源库 · 按需加载"/></a><br/>
-      <sub>资源库 · 按需加载</sub>
-    </td>
-  </tr>
-  <tr>
-    <td align="center" width="50%">
-      <a href="images/screenshot-game-library.png"><img src="images/screenshot-game-library.png" width="100%" alt="游戏库 · 已装包总览"/></a><br/>
-      <sub>游戏库 · 已装包总览</sub>
-    </td>
-    <td align="center" width="50%">
-      <a href="images/screenshot-tools.png"><img src="images/screenshot-tools.png" width="100%" alt="资源管理 · 统计与维护"/></a><br/>
-      <sub>资源管理 · 统计与维护</sub>
-    </td>
-  </tr>
-  <tr>
-    <td align="center" width="50%">
-      <a href="images/screenshot-presets.png"><img src="images/screenshot-presets.png" width="100%" alt="预设依赖管理"/></a><br/>
-      <sub>预设依赖管理</sub>
-    </td>
-    <td align="center" width="50%">
-      <a href="images/screenshot-settings.png"><img src="images/screenshot-settings.png" width="100%" alt="常规设置"/></a><br/>
-      <sub>常规设置</sub>
-    </td>
-  </tr>
-</table>
+> 下方功能详解中穿插了实际界面截图，点击图片可查看大图。
 
 ---
 
@@ -122,6 +85,11 @@
 
 ### 🎮 首页 · 一键启动
 
+<p align="center">
+  <a href="images/screenshot-home.png"><img src="images/screenshot-home.png" width="100%" alt="首页"/></a><br/>
+  <sub>首页：桌面模式 / VR 模式一键启动；下方下拉框可直接选择启动预设</sub>
+</p>
+
 - **桌面模式 / VR 模式（OpenVR）** 一键切换，点击「启动游戏」直接启动 Virt-A-Mate
 - 启动按钮下方的预设下拉框用于选择「当前启动预设」：启动时按预设同步、补齐依赖
 - 点击标题「VAM-BEGIN」可以随机切换下一张壁纸
@@ -141,6 +109,11 @@
 
 ### 📚 资源库 · 按需加载
 
+<p align="center">
+  <a href="images/screenshot-library.png"><img src="images/screenshot-library.png" width="100%" alt="资源库"/></a><br/>
+  <sub>资源库：左侧启动预设栏 + 右侧卡片浏览，勾选后「仅同步」或「启动游戏」</sub>
+</p>
+
 - 浏览本地全部 .var 资源包：预览图、搜索、作者筛选、分类筛选（场景 / 人物 / 脚本 / 变形 / 服装 / 头发 / 资源 / 音频 / 纹理 / 姿势 / 其他）、收藏 / 最近使用、自定义标签、排序与分页
 - **作者筛选** — 搜索框内嵌作者下拉，列表附带该作者资源类型的 Top3 统计，选中即按作者过滤卡片
 - **自定义标签** — 按「作者.包名」身份共享，更换资源库路径也不丢失；筛选栏标签 chips 与卡片右键均可添加 / 清除
@@ -153,6 +126,11 @@
 - 搜索或筛选无结果时显示空状态面板与「清除筛选」按钮
 
 ### 🕹 游戏库 · 已装包总览
+
+<p align="center">
+  <a href="images/screenshot-game-library.png"><img src="images/screenshot-game-library.png" width="100%" alt="游戏库"/></a><br/>
+  <sub>游戏库：游戏 AddonPackages（含 Dp）已装包一览，状态徽章区分来源</sub>
+</p>
 
 - 侧栏一级页面，浏览游戏 `AddonPackages` 中已安装的包（含 Dp 依赖目录）
 - 卡片状态徽章区分「已添加」（由资源库同步）与「手动放入」（直接放进游戏目录）
@@ -175,6 +153,11 @@
 - 可在「常规设置 → 启动行为」关闭散落资源收编提示；手动放进游戏的包同样会被纳入管理
 
 ### 🧩 预设依赖管理
+
+<p align="center">
+  <a href="images/screenshot-presets.png"><img src="images/screenshot-presets.png" width="100%" alt="预设依赖管理"/></a><br/>
+  <sub>预设依赖管理：红色「缺 N」徽章标出缺失依赖，可一键补齐到游戏 Dp</sub>
+</p>
 
 - 扫描场景（.json）与外观（.vap）预设所引用的 var 包，卡片红色「缺 N」徽章标出缺失依赖数
 - 支持 全部 / 场景 / 外观 / 服装 / 皮肤 / 其他 筛选，可按缺失数排序
@@ -232,12 +215,22 @@
 
 ### 📊 资源管理 · 空间统计与预览缓存
 
+<p align="center">
+  <a href="images/screenshot-tools.png"><img src="images/screenshot-tools.png" width="100%" alt="资源管理"/></a><br/>
+  <sub>资源管理：空间统计、预览缓存、依赖体检、库间迁移与资源库维护入口</sub>
+</p>
+
 - **空间统计**：本地库 / 回收站 / 游戏目录的包数与占用以扇形图展示（悬停显示百分比），附作者占用 Top3 与可回收空间；30 秒内复用缓存结果
 - **预览缓存**：显示缓存占用、文件数与上限（默认 500MB，超限自动淘汰最旧文件），支持一键清理
 - **场景依赖体检**：扫描游戏场景引用的 var 包，反查本地缺失，生成「场景依赖报告.md」
 - 同一页还提供库间迁移、资源库维护、一键备份与回收站入口
 
 ### ⚙ 设置与个性化
+
+<p align="center">
+  <a href="images/screenshot-settings.png"><img src="images/screenshot-settings.png" width="100%" alt="常规设置"/></a><br/>
+  <sub>常规设置：路径、同步方式、回收站保留期、主题与版本更新</sub>
+</p>
 
 | 设置项 | 说明 |
 |--------|------|
